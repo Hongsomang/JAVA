@@ -1,0 +1,38 @@
+package exam;
+enum week{
+	MONDAY,TUSESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATUDAY,SUNDAY;
+}
+public class ex3_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		week today=week.SUNDAY;
+		String name =today.name();
+		System.out.println(name);
+		 int ordinal=today.ordinal();
+		 System.out.println(ordinal);
+		 
+		 week day1=week.MONDAY;
+		 week day2=week.WEDNESDAY;
+		 int result1=day1.compareTo(day2);
+		 int result2=day2.compareTo(day1);
+		 System.out.println(result1);
+		 System.out.println(result2);
+		 
+		 if(args.length ==1){
+			 String strDay=args[0];
+			 week weekDay=week.valueOf(strDay);
+			 if(weekDay==week.SATUDAY||weekDay==week.SUNDAY){
+				 System.out.println("쉬자");
+				 
+			 }else{
+				 System.out.println("공부하자");
+			 }
+			 week[] days=week.values();
+			 for(week day: days){
+				 System.out.println(day);
+			 }
+		 }
+	}
+
+}

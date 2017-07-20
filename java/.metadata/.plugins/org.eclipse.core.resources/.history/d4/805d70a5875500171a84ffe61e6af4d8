@@ -1,0 +1,22 @@
+package member2;
+
+public class User {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fruit stroberry= Fruit.APPLE;
+		Fruit apple=Fruit.APPLE;
+		Fruit banana=Fruit.BANANA;
+		stroberry.setColor("빨간색");
+		apple.setColor("빨간색");
+		banana.setColor("노란색");
+		stroberry.setPrice(1000);
+		apple.setPrice(1000);
+		banana.setPrice(1000);
+		System.out.println("과일 이름 :"+stroberry+"가격:"+stroberry.getColor()+"색:"+stroberry.getColor());
+		System.out.println("과일 이름 :"+banana+"가격:"+banana.getColor()+"색:"+banana.getColor());
+		System.out.println("과일 이름 :"+apple+"가격:"+apple.getColor()+"색:"+apple.getColor());
+		
+	}
+
+}

@@ -1,0 +1,60 @@
+package exam;
+interface DB{
+	void connection();
+	void runTransaction();
+	void commit();
+}
+class DB2 implements DB{
+
+	@Override
+	public void connection() {
+		// TODO Auto-generated method stub
+		System.out.println("DB2에 접속");
+	}
+
+	@Override
+	public void runTransaction() {
+		// TODO Auto-generated method stub
+		System.out.println("DB2에 연결");
+	}
+
+	@Override
+	public void commit() {
+		// TODO Auto-generated method stub
+		System.out.println("DB2에 저장");
+	}
+	
+}
+class Oracle implements DB{
+
+	@Override
+	public void connection() {
+		// TODO Auto-generated method stub
+		System.out.println("오라클에 접족 ");
+	}
+
+	@Override
+	public void runTransaction() {
+		// TODO Auto-generated method stub
+		System.out.println("DB2에 연결");
+	}
+
+	@Override
+	public void commit() {
+		// TODO Auto-generated method stub
+		System.out.println("DB2에 저장");
+	}
+	
+}
+public class DBuer2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DB aref=new DB2();
+		aref.connection();
+		aref.runTransaction();
+		aref.commit();
+		
+	}
+
+}

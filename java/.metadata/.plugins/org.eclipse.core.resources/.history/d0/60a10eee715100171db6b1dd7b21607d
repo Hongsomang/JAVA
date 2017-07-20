@@ -1,0 +1,19 @@
+import java.util.function.*;
+
+public class OperatorMinByMaxByExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BinaryOperator<Fruit> bunaryOperator;
+		Fruit fruit;
+		binaryOperator=BinaryOperator.minBy((f1,f2)-> Integer.compare(fi.pricct, fi2.prict));
+		fruit=binaryOperator.apply(new Fruit("µþ±â",6000),new Fruit("¼ö¹Ú"),1000);
+		System.out.println(fruit.name);
+		
+		binaryOperator=BinaryOperator.minBy((f1,f2)-> Integer.compare(fi.pricct, fi2.prict));
+		fruit=binaryOperator.apply(new Fruit("µþ±â",6000),new Fruit("¼ö¹Ú"),1000);
+		System.out.println(fruit.name);
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package exam;
+
+public class DBUer1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Oracle user=new Oracle();
+		user.connetion();
+		user.runTransaction();
+		user.commit();
+	}
+
+}
